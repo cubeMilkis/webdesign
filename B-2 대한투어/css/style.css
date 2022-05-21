@@ -1,0 +1,160 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    color: #333333;
+    font-family: "맑은 고딕";
+}
+html, body {
+    font-size: 20px;
+    background-color: #ffffff;
+    min-width: 1200px;
+    height: 700px;
+}
+a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #737373;
+}
+
+.wrap {
+    width: 1200px;
+    height: 100px;
+}
+.bodyWrap {
+    width: 1200px;
+    height: 500px;
+}
+/* //wrap */
+.wrap .logo {
+    float: left;
+    width: 200px;
+    height: 40px;
+}
+.logo img {
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+}
+    /* //logo */
+.wrap .menu {
+    float: right;
+    width: 800px;
+    height: 100px;
+}
+#menuBg {
+    width: 1200px;
+    height: 160px;
+    position: absolute;
+    display: none;
+    z-index: 2;
+    top: 100px;
+    background-color: #bbbbbb;
+}
+.menu .mainMenu {
+    float: left;
+}
+.menu .mainMenu > li{
+    float: left;
+    width: 200px;
+    height: 50px;
+    margin-top: 50px;
+}
+.menu .mainMenu > li > a {
+    font-size: 16px;
+    width: 200px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    background-color: #333333;
+    color: #ffffff;
+}
+.menu .mainMenu > li > a:hover {
+    background-color: #00c73c;
+}
+.menu .subMenu {
+    width: 200px;
+    height: 160px;
+    position: absolute;
+    display: none;
+    z-index: 3;
+    background-color: #bbbbbb;
+}
+.menu .subMenu li a{
+    font-size: 16px;
+    width: 200px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    background-color: #bbbbbb;
+    color: #333333;
+}
+.menu .subMenu li > a:hover {
+    background-color: #00c73c;
+}
+    /* //menu */
+/* //header */
+
+.imgSlide {
+    float: left;
+    width: 1200px;
+    height: 300px;
+}
+/* //Slide Image */
+
+.contents {
+    float: left;
+    width: 1200px;
+    height: 200px;
+}
+.contents .notice {
+    float: left;
+    width: 400px;
+    height: 200px;
+}
+    /* //notice */
+.contents .gallery {
+    float: left;
+    width: 400px;
+    height: 200px;
+}
+    /* //gallery */
+.contents .shortcut {
+    float: right;
+    width: 400px;
+    height: 200px;
+}
+    /* //shortcut */
+/* //contents */
+
+footer {
+    width: 100%;
+    height: 100px;
+}
+footer .copyright {
+    float: left;
+    width:800px;
+    height: 100px;
+}
+footer .sns {
+    float: right;
+    width: 400px;
+    height: 50px;
+}
+footer .familySite {
+    float: right;
+    width: 400px;
+    height: 50px;
+}

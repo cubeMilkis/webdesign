@@ -1,0 +1,255 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은 고딕";
+    color: #333333;
+}
+html, body {
+    min-width: 1200px;
+    background-color: #ffffff;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #dddddd;
+}
+header .logo {
+    float: left;
+    width: 250px;
+    height: 100px;
+}
+/* //logo */
+header .menu {
+    float: right;
+    width: 800px;
+    height: 100px;
+    z-index: 1;
+}
+.menu .mainMenu {
+    float: right;
+    margin-top: 30px;
+    margin-right: 10px;
+}
+.menu .mainMenu > li{
+    float: left;
+}
+.menu .mainMenu > li > a {
+    width: 180px;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #555555;
+    color:#eeeeee;
+    height: 40px;
+    line-height: 40px;
+} 
+.menu .mainMenu > li > a:hover {
+    background-color: #0076BE;
+}
+.menu .subMenu {
+    width: 180px;
+    height: 160px;
+    position: absolute;
+    display: none;
+    z-index: 1;
+    background-color: #ffffff;
+}
+.menu .subMenu > li > a {
+    width: 180px;
+    height: 40px;
+    line-height: 40px;
+    font-size: 14px;
+    text-align: center;
+    font-weight: bold;
+    background-color: #ffffff;
+    color: #333333;
+} 
+.menu .subMenu > li > a:hover {
+    background-color: #0076be;
+}
+    /* //menu */
+/* //header */
+.wrap {
+    width: 1200px;
+}
+.bodyWrap {
+    width: 1200px;
+    height: 500px;
+}
+/* //wrap */
+
+.slideImage {
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.slideImage .slideList {
+    width: 3600px;
+}
+.slideList ul li {
+    width: 1200px;
+    float: left;
+}
+.slideList ul li span {
+    width: 500px;
+    height: 50px;
+    position: absolute;
+    color: #ffffff;
+    text-align: center;
+    font-weight: bold;
+    line-height: 50px;
+    background-color: rgba(40,40,40,0.5);
+    margin-left: 350px;
+    margin-top: 125px;
+}
+/* //Image Slide */
+.contents {
+    float: left;
+    width: 1200px;
+    height: 200px;
+    position: relative;
+}
+.contents .tabMenu {
+    float: left;
+    width: 395px;
+    height: 180px;
+    margin: 10px 0;
+}
+.tabMenu > li {
+    float: left;
+    width: 100px;
+    line-height: 30px;
+}
+.tabMenu >li >a {
+    display: block;
+    background-color: #cccccc;
+    font-size: 16px;
+    text-align: center;
+    border: 1px solid #dddddd;
+    border-bottom: none;
+}
+.tabMenu > li > a:hover {
+    background-color: #eeeeee;
+}
+.tabMenu > li:first-child a {
+    border-right: none;
+}
+.tabMenu > li.active > a{
+    background-color: #ffffff;
+}
+.tabMenu > li div {
+    position: absolute;
+    left: 0px;
+    height: 0px;
+    overflow: hidden;
+}
+.tabMenu > li.active div {
+    width: 393px;
+    height: 148px;
+    border: 1px solid #dddddd;
+    z-index: 1;
+}
+.notice ul {
+    float: left;
+    width: 393px;
+    margin: 12px 0;
+}
+.notice li {
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    margin: 0 10px;
+}
+.notice li:nth-child(2n){
+    background-color: #cccccc;
+}
+.notice li span {
+    float: right;
+}
+.notice li:hover {
+    font-weight: bold;
+}
+
+.gallery li {
+    float: left;
+    margin-top: 15px;
+    margin-left : 5px;
+}
+.gallery img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+/* //gallery */
+.banner {
+    float: left;
+    width: 395px;
+    height: 180px;
+    margin: 10px 0;
+}
+.banner img {
+    float: left;
+    width: 395px;
+    height: 180px;
+}
+.banner .bntext {
+    float: left;
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 40px;
+    background-color: rgba(40,40,40,0.3);
+    left: 450px;
+    top: 80px;
+}
+.banner img:hover {
+    opacity: 0.5;
+}
+.shortcut {
+    float: right;
+    width: 400px;
+    height: 180px;
+    margin: 10px 0;
+}
+.shortcut img {
+    float: left;
+    width: 400px;
+    height: 180px;
+}
+.shortcut .sctext {
+    float: left;
+    width: 300px;
+    height: 40px;
+    position: absolute;
+    text-align: center;
+    color: #ffffff;
+    font-weight: bold;
+    line-height: 40px;
+    background-color: rgba(40,40,40,0.3);
+    left: 850px;
+    top: 80px;
+}
+.shortcut img:hover {
+    opacity: 0.5;
+}
+footer {
+    float: left;
+    width: 100%;
+    height: 100px;
+    background-color: #0076BE;
+}
