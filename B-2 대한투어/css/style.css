@@ -92,7 +92,7 @@ header {
     background-color: #bbbbbb;
 }
 .menu .subMenu li a{
-    font-size: 16px;
+    font-size: 14px;
     width: 200px;
     text-align: center;
     height: 40px;
@@ -111,6 +111,26 @@ header {
     float: left;
     width: 1200px;
     height: 300px;
+    position: relative;
+}
+.imgSlide a {
+    float: left;
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+}
+.imgSlide a .imgText {
+    position: absolute;
+    left: 40%;
+    top: 45%;
+    background-color: #cccccc;
+    font-size: 18px;
+    font-weight: bold;
+    width: 250px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
 }
 /* //Slide Image */
 
@@ -119,10 +139,40 @@ header {
     width: 1200px;
     height: 200px;
 }
+.tab {
+    width: 400px;
+    float: left;
+}
+.tab h4 {
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    background-color: #333333;
+    color: #ffffff;
+}
 .contents .notice {
     float: left;
     width: 400px;
     height: 200px;
+}
+.notice ul > li{
+    float: left;
+
+    line-height: 40px;
+    width: 350px;
+}
+.notice ul li span {
+    float: right;
+}
+.notice ul li a {
+    font-size: 16px;
+}
+.notice ul li a:hover {
+    font-weight: bold;
 }
     /* //notice */
 .contents .gallery {
@@ -130,11 +180,33 @@ header {
     width: 400px;
     height: 200px;
 }
+
+.gallery ul li {
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.gallery ul li a:hover {
+    opacity: 0.5;
+}
     /* //gallery */
 .contents .shortcut {
     float: right;
     width: 400px;
     height: 200px;
+    position: relative;
+}
+.shortcut a .sctext {
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    background-color: #cccccc;
+    font-size: 18px;
+    font-weight: bold;
+    width: 250px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
 }
     /* //shortcut */
 /* //contents */
@@ -142,19 +214,38 @@ header {
 footer {
     width: 100%;
     height: 100px;
+    background-color: #00c73c;
 }
 footer .copyright {
     float: left;
-    width:800px;
+    width: 1000px;
     height: 100px;
 }
+footer .copyright h4 {
+    line-height: 100px;
+    color: #ffffff;
+}
+
 footer .sns {
     float: right;
-    width: 400px;
+    width: 200px;
     height: 50px;
+}
+.sns .snsImg {
+    width: 200px;
+}
+.sns .snsImg li{
+    float: left;
+    margin: 5px;
 }
 footer .familySite {
     float: right;
-    width: 400px;
-    height: 50px;
+    width: 195px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+.familySite select {
+    font-size: 14px;
+    width: 185px;
 }
