@@ -18,4 +18,12 @@ jQuery(document).ready(function(){
         .appendTo(`.imgSlide`);
 
     },3000);
+
+    $(`.notice li:first-child`).click(function(){
+        $(`#modal`).addClass(`active`)
+    });
+
+    $(`.modalWrap .upBtn`).click(function(){
+        $(`#modal`).removeClass(`active`)
+    });
 })
