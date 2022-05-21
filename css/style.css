@@ -1,0 +1,307 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    color: #333333;
+    font-family: "맑은 고딕";
+}
+html, body {
+    font-size: 20px;
+    background-color: #ffffff;
+    min-width: 1200px;
+    height: 700px;
+}
+a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #737373;
+}
+
+.wrap {
+    width: 1200px;
+    height: 100px;
+}
+.bodyWrap {
+    width: 1200px;
+    height: 500px;
+}
+/* //wrap */
+.wrap .logo {
+    float: left;
+    width: 200px;
+    height: 40px;
+}
+.logo img {
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+}
+    /* //logo */
+.wrap .menu {
+    float: right;
+    width: 800px;
+    height: 100px;
+}
+#menuBg {
+    width: 1200px;
+    height: 160px;
+    position: absolute;
+    display: none;
+    z-index: 2;
+    top: 100px;
+    background-color: #bbbbbb;
+}
+.menu .mainMenu {
+    float: left;
+}
+.menu .mainMenu > li{
+    float: left;
+    width: 200px;
+    height: 50px;
+    margin-top: 50px;
+}
+.menu .mainMenu > li > a {
+    font-size: 16px;
+    width: 200px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-weight: bold;
+    background-color: #333333;
+    color: #ffffff;
+}
+.menu .mainMenu > li > a:hover {
+    background-color: #00c73c;
+}
+.menu .subMenu {
+    width: 200px;
+    height: 160px;
+    position: absolute;
+    display: none;
+    z-index: 3;
+    background-color: #bbbbbb;
+}
+.menu .subMenu li a{
+    font-size: 14px;
+    width: 200px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    background-color: #bbbbbb;
+    color: #333333;
+}
+.menu .subMenu li > a:hover {
+    background-color: #00c73c;
+}
+    /* //menu */
+/* //header */
+
+.imgSlide {
+    float: left;
+    width: 1200px;
+    height: 300px;
+    position: relative;
+}
+.imgSlide a {
+    float: left;
+    width: 1200px;
+    height: 300px;
+    position: absolute;
+    z-index: 1;
+}
+.imgSlide a .imgText {
+    position: absolute;
+    left: 40%;
+    top: 45%;
+    background-color: #cccccc;
+    font-size: 18px;
+    font-weight: bold;
+    width: 250px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+/* //Slide Image */
+
+.contents {
+    float: left;
+    width: 1200px;
+    height: 200px;
+}
+.tab {
+    width: 400px;
+    float: left;
+}
+.tab h4 {
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: bold;
+    background-color: #333333;
+    color: #ffffff;
+}
+.contents .notice {
+    float: left;
+    width: 400px;
+    height: 200px;
+}
+.notice ul > li{
+    float: left;
+
+    line-height: 40px;
+    width: 350px;
+}
+.notice ul li span {
+    float: right;
+}
+.notice ul li a {
+    font-size: 16px;
+}
+.notice ul li a:hover {
+    font-weight: bold;
+}
+    /* //notice */
+.contents .gallery {
+    float: left;
+    width: 400px;
+    height: 200px;
+}
+
+.gallery ul li {
+    float: left;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.gallery ul li a:hover {
+    opacity: 0.5;
+}
+    /* //gallery */
+.contents .shortcut {
+    float: right;
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+.shortcut a .sctext {
+    position: absolute;
+    left: 20%;
+    top: 40%;
+    background-color: #cccccc;
+    font-size: 18px;
+    font-weight: bold;
+    width: 250px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+    /* //shortcut */
+
+#modal {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.7);
+    z-index: 3;
+    display: none;
+}
+#modal.active {
+    display: block;
+}
+#modal .modalWrap {
+    position: fixed;
+    left: 35%;
+    top: 30%;
+    width: 350px;
+    height: 300px;
+    background-color: #ffffff;
+}
+.modalWrap .upTitle h3{
+    text-align: center;
+    font-size: 20px;
+    margin:10px;
+}
+.modalWrap .upBody {
+    text-align: center;
+    font-size: 16px;
+    margin: 10px 15px;
+    line-height: 30px;
+}
+.modalWrap .upBtn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 15px;
+    background-color: #bbbbbb;
+    font-weight: bold;
+    width: 60px;
+    height: 25px;
+    text-align: center;
+    line-height: 25px;
+    cursor: default;
+}
+.modalWrap .upBtn:active {
+    background-color: #666666;
+}
+    /* //Modal */
+/* //contents */
+
+footer {
+    width: 100%;
+    height: 100px;
+    background-color: #00c73c;
+}
+footer .copyright {
+    float: left;
+    width: 1000px;
+    height: 100px;
+}
+footer .copyright h4 {
+    line-height: 100px;
+    color: #ffffff;
+}
+    /* //COPYRIGHT */
+footer .sns {
+    float: right;
+    width: 200px;
+    height: 50px;
+}
+.sns .snsImg {
+    width: 200px;
+}
+.sns .snsImg li{
+    float: left;
+    margin: 5px;
+}
+.sns .snsImg li a:hover {
+    opacity: 0.8;
+}
+    /* //SNS */
+footer .familySite {
+    float: right;
+    width: 195px;
+    height: 40px;
+    margin-left: 5px;
+    margin-top: 15px;
+}
+.familySite select {
+    font-size: 14px;
+    width: 185px;
+}
+    /* //Family Site */
+/* //footer */
