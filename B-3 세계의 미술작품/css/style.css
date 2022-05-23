@@ -7,10 +7,12 @@
     list-style: none;
     color: #888888;
     font-size: 20px;
+    font-family: "맑은 고딕";
 }
 html, body {
     background-color: #ffffff;
     min-width: 1200px;
+    max-height: 700px;
 }
 a {
     text-decoration: none;
@@ -42,7 +44,7 @@ header .menu {
     width: 800px;
     height: 100px;
     position: relative;
-    z-index: 2;
+    z-index: 1;
 }
 .menu .mainMenu > li{
     float: left;
@@ -82,24 +84,28 @@ header .menu {
     width: 1200px;
     height: 300px;
     position: relative;
+    overflow: hidden;
 }
-.imgSlide .slideSpace {
+.imgSlide .slideList{
     height: 900px;
 }
-.imgSlide .imgText {
+.slideList ul li {
+    height: 300px;
+    float: left;
+}
+.slideList ul li .imgText{
     font-weight: bold;
     background-color: rgba(100,100,100,0.5);
     position: absolute;
-    left: 42%;
-    top: 40%;
-    width: 200px;
-    height: 30px;
-    z-index: 1;
+    width: 500px;
+    line-height: 50px;
+    height: 50px;
     text-align: center;
+    margin-left: 350px;
+    margin-top:125px;
 }
-.imgSlide img {
-    float: left;
-}
+
+
 .contents {
     float: left;
     width: 1200px;
@@ -111,34 +117,170 @@ header .menu {
 }
 .contents .notice {
     float: left;
+} 
+.notice h4 {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4a4948;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
 }
+.notice ul {
+    float: left;
+    width: 388px;
+    height: 158px;
+    padding-left: 10px;
+    border: 1px solid #888888;
+}
+.notice ul > li {
+    float: left;
+    width: 370px;
+    height: 40px;
+    line-height: 40px;
+}
+.notice ul li a {
+    font-size: 16px;
+}
+.notice ul li a span {
+    float: right;
+    font-size: 16px;
+}
+.notice ul li a:hover {
+    font-weight: bold;
+}
+
     /* //notice */
 .contents .gallery {
     float: left;
 }
+.gallery h4 {
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #4a4948;
+    width: 100px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    float: left;
+}
+.gallery ul {
+    float: left;
+    width: 400px;
+    margin-left: 40px;
+    margin-top: 30px;
+}
+.gallery ul li {
+    width: 120px;
+    float: left;
+}
+.gallery ul li img {
+    width: 100px;
+    height: 100px;
+}
+.gallery ul li a:hover {
+    opacity: 0.5;
+}
+
     /* //gallery */
 .contents .banner {
     float: right;
+    position: relative;
+}
+.banner a h4{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    background-color: rgba(100,100,100,0.5);
+    left: 150px;
+    top: 80px;
+    font-size: 18px;
+    text-align: center;
 }
     /* //banner */
 /* //contents */
-
+#layer {
+    position:absolute;
+    display: none;
+}
+#layer.active {
+    display: block;
+}
+#layer .layerUp {
+    width: 500px;
+    height: 400px;
+    position: fixed;
+    left: 30%;
+    top: 20%;
+    background-color: #ffffff;
+    z-index: 2;
+}
+.layerUp .upTitle {
+    margin-top: 30px;
+    text-align: center;
+    line-height: 16px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.layerUp .upBody {
+    line-height: 30px;
+    text-align: center;
+    font-size: 16px;
+    margin: 30px;
+}
+.layerUp .closeBtn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-size: 15px;
+    font-weight: bold;
+    width: 80px;
+    height: 30px;
+    background-color: #cccccc;
+}
+.layerUp .closeBtn:active {
+    background-color: #bbbbbb;
+} 
 footer {
     width: 100%;
     height: 100px;
+    background-color: #caac7d;
 }
 footer .btlogo {
     float: left;
+    width: 200px;
+    height: 70px;
+    margin-top: 30px;
+}
+.btlogo img {
     width: 200px;
     height: 40px;
 }
 footer .copyright {
     float: left;
-    width: 800px;
-    height: 100px;
+    width: 650px;
+    height: 60px;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-left: 50px;
 }
 footer .sns {
     float: right;
-    width: 200px;
-    height: 100px;
+    width: 250px;
+    height: 80px;
+    margin-top: 20px;
+    margin-left: 50px;
+}
+.sns img {
+    width: 40px;
+    height: 40px;
+    padding: 5px;
+}
+.sns ul li {
+    float: left;
+    width: 70px;
 }
