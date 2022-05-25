@@ -143,6 +143,15 @@ header .menu {
     text-align: center;
     background-color: #bbbbbb;
 }
+.notice ul {
+    border: 1px solid;
+    height: 168px;
+    width: 298px;
+}
+.notice ul li {
+    width: 298px;
+    height: 40px;
+}
 .notice ul li a{
     float: left;
     font-size: 14px;
@@ -151,8 +160,8 @@ header .menu {
     width: 280px;
     margin-left: 10px;
 }
-.notice li:nth-child(2n) {
-    background: rgba(0,0,0,0.5);
+.notice ul li:nth-child(2n){
+    background-color: rgba(0,0,0,0.5);
 }
 .notice ul li a:hover {
     font-weight: bold;
@@ -178,10 +187,13 @@ header .menu {
     background-color: #bbbbbb;
 }
 .gallery ul {
-    margin-top: 30px;
-    width: 300px;
+    height: 168px;
+    width: 298px;
+    border: 1px solid;
+    border-left: none;
 }
 .gallery ul li {
+    margin-top: 30px;
     float: left;
     margin-left: 15px;
 }
