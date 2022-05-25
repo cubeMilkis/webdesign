@@ -1,0 +1,146 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은 고딕";
+    font-size: 20px;
+}
+
+body {
+    background-color: #ffffff;
+    color: #222328;
+}
+
+a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+.main {
+    float: left;
+    width: 1000px;
+    height: 650px;
+}
+/* //Main Wrap */
+
+header {
+    float: left;
+    width: 200px;
+    height: 650px;
+    background-color: #f0ffff;
+}
+header .logo {
+    float: left;
+    width: 100%;
+    height: 40px;
+}
+.logo img {
+    width: 200px;
+    height: 40px;
+}
+header .menu {
+    float: left;
+    width:100%;
+    height: 500px;
+    margin-top: 100px;
+    text-align: center;
+    position: relative;
+}
+.menu .mainMenu > li {
+    float: left;
+    width: 180px;
+    margin-left: 10px;
+}
+.menu .mainMenu > li > a {
+    color: #eeeeee;   
+    background-color: #444444;
+    height: 40px;
+    line-height: 40px;
+    font-size: 18px;
+    font-weight: bold;
+}
+.menu .mainMenu > li > a:hover {
+    background-color: #eda3d9;
+}
+.menu .subMenu {
+    position: absolute;
+    left: 190px;
+    top: -40px;
+    background-color: #eda3d9;
+    height: 300px;
+    display: none;
+}
+.menu .subMenu > li {
+    height: 40px;
+    line-height: 40px;
+    width: 180px;
+}
+.menu .subMenu > li a {
+    font-size: 16px;
+    font-weight: bold;
+}
+.menu .subMenu > li a:hover {
+    background-color: #555555;
+    color: #eda9d9;
+}
+/* //Header */
+
+.bodyWrap {
+    float: right;
+    width: 800px;
+    height: 650px;
+}
+/* //Body wrap */
+
+.imgSlide {
+    float: right;
+    width: 100%;
+    height: 350px;
+}
+/* //Image Slide */
+
+.contents {
+    float: right;
+    width: 100%;
+    height: 200px;
+}
+.contents .notice {
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+.contents .gallery {
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+.contents .banner {
+    float: right;
+    width: 200px;
+    height: 200px;
+}
+
+footer {
+    float: right;
+    width: 100%;
+    height: 100px;
+}
+footer .btlogo {
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+footer .btmenu {
+    float: right;
+    width: 600px;
+    height: 50px;
+}
+footer .copyright {
+    float: right;
+    width: 600px;
+    height: 50px;
+}
