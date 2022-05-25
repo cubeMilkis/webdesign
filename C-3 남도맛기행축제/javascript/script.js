@@ -15,4 +15,11 @@ jQuery(document).ready(function(){
         $(`.slideList`).animate({marginLeft: 0})
         $(`.slideList`).delay(1000)
     });
+
+    $(`.notice li:first-child`).click(function(){
+        $(`#layer`).addClass(`active`);
+    });
+    $(`.layerUp .upBtn`).click(function(){
+        $(`#layer`).removeClass(`active`);
+    });
 })

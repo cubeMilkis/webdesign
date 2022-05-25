@@ -196,25 +196,105 @@ header .menu {
     float: right;
     width: 200px;
     height: 200px;
+    position: relative;
 }
-
+.banner .bntext {
+    position: absolute;
+    left: 25%;
+    top:40%;
+    width: 100px;
+    height: 30px;
+    line-height: 30px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: rgba(40,40,40,0.7);
+    color: #eda9d9;
+    text-align: center;
+}
+    /* //banner */
+#layer {
+    position: absolute;
+    left: 0;
+    top: 0;
+    display: none;
+}
+#layer.active {
+    display: block;
+}
+#layer .layerUp {
+    position: fixed;
+    width: 500px;
+    height: 300px;
+    left: 20%;
+    top: 20%;
+    background-color: #ffffff;
+    border: 2px solid #333333;
+    z-index: 2;
+}
+.layerUp .upTitle {
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+    font-size: 20px;
+    float: left;
+    margin-left: 50px;
+    width: 400px;
+}
+.layerUp .upBody {
+    float: left;
+    text-align: center;
+    font-size: 16px;
+    line-height: 30px;
+    width: 400px;
+    margin-left: 50px;
+}
+.layerUp .upBtn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #bbbbbb;
+    color: #222328;
+    width: 80px;
+    height: 30px;
+}
+.layerUp .upBtn:active {
+    background-color: #cccccc;
+}
+/* //contents */
 footer {
     float: right;
     width: 100%;
     height: 100px;
+    background-color: beige;
 }
 footer .btlogo {
     float: left;
     width: 200px;
     height: 100px;
+    line-height: 100px;
+}
+.btlogo img {
+    width: 200px;
+    height: 40px;
 }
 footer .btmenu {
     float: right;
-    width: 600px;
+    width: 500px;
     height: 50px;
+    text-align: center;
+}
+.btmenu li {
+    float: left;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    font-weight: bold;
 }
 footer .copyright {
     float: right;
-    width: 600px;
+    width: 500px;
     height: 50px;
+    font-size: 16px;
+    font-weight: bold;
 }
