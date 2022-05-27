@@ -14,4 +14,12 @@ jQuery(document).ready(function(){
         .end()
         .appendTo(`.imgSlide`)  
     },3000)
+
+    $(`.notice li:first-child`).click(function(){
+        $(`#modal`).addClass(`active`);
+
+    $(`.modalUp .upBtn`).click(function(){
+        $(`#modal`).removeClass(`active`);
+    })
+    })
 });
