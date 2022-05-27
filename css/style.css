@@ -1,0 +1,335 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin:0;
+    padding: 0;
+    list-style: none;
+    font-family: "맑은 고딕";
+    font-size: 20px;
+    color: #222328;
+}
+
+body {
+    background-color: #ffffff;
+    width: 1000px;
+}
+a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+
+header {
+    float: left;
+    background-color: azure;
+}
+.headerWrap {
+    float: left;
+    width: 200px;
+    height: 650px;
+}
+header .headerWrap .logo {
+    float: left;
+    width: 200px;
+    height: 40px;
+}
+header .headerWrap .logo img {
+    width: 200px;
+    height: 40px;
+}
+    /* //logo */
+header .headerWrap .menu {
+    float: left;
+    width: 200px;
+    height: 600px;
+}
+header .headerWrap .menu>.mainMenu {
+    margin-top: 80px;
+}
+header .headerWrap .menu>.mainMenu > li{
+    float: left;
+    text-align: center;
+    margin-left: 10px;
+}
+header .headerWrap .menu > .mainMenu > li > a {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #222328;
+    color: #ffffff;
+    height: 50px;
+    width: 180px;
+    line-height: 50px;
+}
+header .headerWrap .menu > .mainMenu > li > a:hover {
+    background-color: #930930;
+    color:#ffff00;
+}
+header .headerWrap .menu>.mainMenu>li>.subMenu {
+    display: none;
+}
+header .headerWrap .menu>.mainMenu>li>.subMenu> li {
+    float: left;
+    text-align: center;
+}
+header .headerWrap .menu>.mainMenu>li>.subMenu> li > a {
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #cccccc;
+    color: #ffffff;
+    height: 50px;
+    width: 180px;
+    line-height: 50px;
+}
+header .headerWrap .menu>.mainMenu>li>.subMenu> li > a:hover {
+    background-color: #999999;
+    color: #ffff00;
+}
+
+/* //header */
+
+.bodyWrap {
+    float: left;
+    width: 800px;
+    height: 650px;
+}
+
+.imgSlide {
+    float: right;
+    width: 800px;
+    height: 350px;
+    position: relative;
+}
+.imgSlide a{
+    position: absolute;
+}
+.imgSlide .imgText {
+    position: absolute;
+    width: 200px;
+    line-height: 40px;
+    height: 40px;
+    font-weight: bold;
+    background-color: rgba(100,100,100,0.7);
+    margin-left: 300px;
+    margin-top: 145px;
+    text-align: center;
+    z-index: 1;
+}
+.imgSlide img {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+/* //Image Slide */
+
+.contents {
+    float: right;
+    width: 800px;
+    height: 200px;
+}
+.contents .notice {
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+.notice h4 {
+    width: 100px;
+    height: 40px;
+    background-color: #222328;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.notice ul {
+    width: 298px;
+    height: 158px;
+    border: 1px solid #222328;
+    float: left;
+}
+.notice ul li {
+    float: left;
+    width: 298px;
+}
+.notice ul li > a {
+    font-size: 14px;
+    margin-left: 10px;
+    height: 40px;
+    line-height: 40px;
+    width: 288px;
+}
+.notice ul li > a:hover {
+    font-weight: bold;
+}
+.notice ul li span {
+    float: right;
+    font-size: 14px;
+    margin-right: 10px;
+} 
+    /* //notice */
+.contents .gallery {
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+.gallery h4 {
+    width: 100px;
+    height: 40px;
+    background-color: #222328;
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px;
+}
+.gallery ul {
+    width: 298px;
+    height: 158px;
+    border: 1px solid #222328;
+    float: left;
+}
+.gallery ul > li {
+    float: left;
+    width: 88px;
+    margin-left: 10px;
+    margin-top: 40px;
+}
+.gallery ul li a img {
+    width: 80px;
+    height: 80px;
+}
+    /* //gallery */
+.contents .shortcut {
+    float: right;
+    width: 200px;
+    height: 200px;
+    position: relative;
+}
+.shortcut a {
+    float: left;
+}
+.shortcut a img {
+    float: left;
+    width: 200px;
+    height: 200px;
+}
+.shortcut a .sctext {
+    position: absolute;
+    margin-top: 40%;
+    margin-left: 30%;
+    width: 100px;
+    height: 40px;
+    background-color: rgba(0,0,0,0.5);
+    color: #ffffff;
+    text-align: center;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 40px;
+}
+    /* //shortcut */
+#modal {
+    position:absolute;
+    left: 0%;
+    top: 0%;
+    background-color: rgba(40,40,40,0.5);
+    z-index: 2;
+    width: 1000px;
+    height: 650px;
+    display: none;
+}
+#modal.active {
+    display:block;
+}
+.modalUp {
+    position: fixed;
+    width: 400px;
+    height: 300px;
+    background-color: #ffffff;
+    left: 20%;
+    top: 20%;
+    border: 2px solid #333333;
+}
+.modalUp .upTitle {
+    float: left;
+    font-size: 20px;
+    font-weight: bold;
+    width: 400px;
+    text-align: center;
+    height: 50px;
+    line-height: 50px;
+}
+.modalUp .upBody {
+    float: left;
+    font-size: 16px;
+    text-align: center;
+    width: 300px;
+    margin-left:50px;
+    line-height: 30px;
+}
+.modalUp .upBtn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    background-color: #cccccc;
+    width: 80px;
+    height: 30px;
+    line-height: 30px;
+    text-align: center;
+}
+.upBtn:active {
+    background-color: #bbbbbb;
+}
+/* //contents */
+
+footer {
+    float: right;
+    width: 800px;
+    height: 100px;
+    background-color: beige;
+}
+footer .copyright {
+    float: left;
+    width: 590px;
+    height: 100px;
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 100px;
+    margin-left: 10px;
+}
+/* //COPYRIGHT */
+footer .sns {
+    float: right;
+    width: 160px;
+    height: 50px;
+    margin-left: 40px;
+}
+.sns a {
+    float: left;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.sns a img {
+    width: 40px;
+    height: 40px;
+}
+/* //SNS */
+footer .familySite {
+    float: right;
+    width: 200px;
+    height: 50px;
+    position: relative;
+}
+.familySite select {
+    width: 140px;
+    height: 30px;
+    font-size: 16px;
+    position: absolute;
+    left: 50px;
+    top: 10px;
+}
+.familySite select option {
+    font-size: 16px;
+}
