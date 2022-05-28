@@ -1,0 +1,99 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 20px;
+    color: #222328;
+}
+body {
+    background-color: #ffffff;
+    width: 1000px;
+    height: 650px;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+}
+
+header {
+    float: left;
+    width: 200px;
+    height: 650px;
+    background-color: #777777;
+}
+header .logo {
+    width: 200px;
+    height: 40px;
+}
+.logo img {
+    width: 200px;
+    height: 40px;
+}
+    /* //logo */
+header .menu {
+    float: left;
+    width: 180px;
+    height: 450px;
+}
+.menu .mainMenu {
+    margin-top: 30px;
+    margin-left: 10px;
+}
+.menu .mainMenu > li {
+    width: 180px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    background-color: #333333;
+}
+.menu .mainMenu > li a {
+    font-size: 16px;
+    font-weight: bold;
+    color: #ffff00;
+}
+.menu .mainMenu > li a:hover {
+    background-color: #bbbbbb;
+}
+.menu .subMenu {
+    background-color: #cccccc;
+    display: none;
+}
+.menu .subMenu li {
+    width: 180px;
+    height: 50px;
+    float: left;
+    
+}
+.menu .subMenu > li a{
+    color: beige;
+    font-size: 14px;
+    font-weight: bold;
+}
+.menu .subMenu > li a:hover {
+    background-color: #dddddd;
+}
+/* //header */
+
+.imgSlide {
+    float: right;
+    width: 800px;
+    height: 350px;
+}
+/* //Image Slide */
+
+.contents {
+    float: right;
+    width: 800px;
+    height: 200px;
+}
+/* //Contents */
+
+footer {
+    float: right;
+    width: 800px;
+    height: 100px;
+}
