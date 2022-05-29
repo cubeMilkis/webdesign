@@ -38,22 +38,25 @@ header .menu {
     float: left;
     width: 180px;
     height: 450px;
+    position: relative;
 }
 .menu .mainMenu {
     margin-top: 30px;
-    margin-left: 10px;
 }
 .menu .mainMenu > li {
-    width: 180px;
-    height: 50px;
-    line-height: 50px;
+    float: left;
+    margin-left: 10px;
     text-align: center;
-    background-color: #333333;
+    
 }
 .menu .mainMenu > li a {
     font-size: 16px;
     font-weight: bold;
+    background-color: #222328;
     color: #ffff00;
+    height: 50px;
+    width: 180px;
+    line-height: 50px;
 }
 .menu .mainMenu > li a:hover {
     background-color: #bbbbbb;
@@ -66,7 +69,7 @@ header .menu {
     width: 180px;
     height: 50px;
     float: left;
-    
+    line-height: 50px;
 }
 .menu .subMenu > li a{
     color: beige;
@@ -82,7 +85,26 @@ header .menu {
     float: right;
     width: 800px;
     height: 350px;
+    position: relative;
 }
+.imgSlide a .imgText {
+    width: 300px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgba(100,100,100,0.5);
+    color: #ffff00;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    z-index: 1;
+}
+.imgSlide a img {
+    position: absolute;
+    float:left;
+} 
 /* //Image Slide */
 
 .contents {
@@ -90,10 +112,115 @@ header .menu {
     width: 800px;
     height: 200px;
 }
+.contents .tab {
+    float: left;
+    width: 300px;
+    height: 200px;
+}
+/* //Tab */
+.contents .banner {
+    float:left;
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+.banner img {
+    width: 250px;
+    height: 200px;
+}
+.banner .bntext {
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgba(100,100,100,0.5);
+    color: #ffffff;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    z-index: 1;
+}
+    /* //Banner */
+.contents .shortcut {
+    float:right;
+    width: 250px;
+    height: 200px;
+    position: relative;
+}
+.shortcut img {
+    width: 250px;
+    height: 200px;
+}
+.shortcut .sctext {
+    width: 100px;
+    height: 50px;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 50px;
+    text-align: center;
+    background-color: rgba(100,100,100,0.5);
+    color: #ffffff;
+    position: absolute;
+    left: 30%;
+    top: 40%;
+    z-index: 1;
+}
+    /* //Shortcut */
 /* //Contents */
 
 footer {
     float: right;
     width: 800px;
     height: 100px;
+    background-color: #999999;
+}
+footer .btlogo {
+    float: left;
+    width: 200px;
+    height: 100px;
+}
+.btlogo a {
+    margin-left: 10px;
+    margin-top: 30px;
+}
+.btlogo img {
+    width: 200px;
+    height: 40px;
+}
+/* //bottom logo */
+footer .btmenu {
+    float: right;
+    width: 600px;
+    height: 50px;
+}
+.btmenu ul {
+    margin-left: 75px;
+}
+.btmenu ul li{
+    float: left;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    border: 1px solid;
+    border-bottom: none;
+    border-top: none;
+}
+.btmenu ul li a{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+}
+/* //Bottom Menu */
+footer .copyright {
+    float: right;
+    width: 600px;
+    height: 50px;
+}
+.copyright h4 {
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    line-height: 50px;
 }
