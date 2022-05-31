@@ -30,19 +30,272 @@ header {
     height: 100px;
     background-color: #0066ad;
 }
+header .logo {
+    width: 190px;
+    height: 40px;
+    float: left;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+header .menu {
+    float: right;
+    width: 700px;
+    height: 100px;
+    position: relative;
+    z-index: 1;
+}
+.menu .mainMenu {
+    float: left;
+    width: 700px;
+    margin-top: 40px;
+}
+.menu .mainMenu > li {
+    float: left;
+    width: 150px;
+    background-color: #444444;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+.menu .mainMenu > li > a {
+    color: #eeeeee;
+    font-size: 16px;
+    font-weight: bold;
+}
+.menu .mainMenu > li > a:hover {
+    background-color: #bbbbbb;
+    color: #ffff00;
+}
+.menu .subMenu {
+    display: none;
+    position: absolute;
+}
+.menu .subMenu li{
+    width: 150px;
+    height: 40px;
+    background-color: #333333;
+    line-height: 40px;
+    text-align: center;
+}
+.menu .subMenu li a {
+    color: #eeeeee;
+    font-weight: bold;
+    font-size: 14px;
+}
+.menu .subMenu li a:hover {
+    background-color: #30a3f3;
+    color: #ffff00;
+}
 /* //Header */
 
 .imgSlide {
     float: left;
     width: 100%;
     height: 300px;
+    position: relative;
+    overflow: hidden;
 }
+.imgSlide .imgText {
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 450px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #eeeeee;
+    background-color: rgba(40,40,40,0.5);
+    width: 300px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+.imgSlide a {
+    position: absolute;
+}
+
 /* //Image Slide */
 
 .contents {
     float: left;
     width: 100%;
     height: 200px;
+}
+.contents .tabMenu {
+    float: left;
+    width: 400px;
+    height: 180px;
+    margin: 10px 0;
+    position: relative;
+}
+.tabMenu > li {
+    float: left;
+    width: 100px;
+    line-height: 30px;
+}
+.tabMenu > li > a {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    background-color: #cccccc;
+    border: 1px solid #dddddd;
+    border-bottom: none;
+}
+.tabMenu > li > a:hover {
+    background-color: #eeeeee;
+}
+.tabMenu > li:first-child a {
+    border-right: none;
+}
+.tabMenu > li.active > a{
+    background-color: #ffffff;
+}
+.tabMenu > li > div {
+    position: absolute;
+    left: 0px;
+    height: 0px;           
+    overflow: hidden;
+}
+.tabMenu > li.active > div {
+    width: 393px;
+    height: 148px;
+    border: 1px solid #dddddd;
+    z-index: 1;
+}
+.notice ul {
+    float: left;
+    width: 393px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+.notice ul li a{
+    height: 32px;
+    line-height: 32px;
+    font-size: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
+}
+.notice ul li a span {
+    float: right;
+    font-size: 15px;
+}
+.notice li:nth-child(2n) {
+    background-color: #cccccc;
+}
+.notice li a:hover {
+    font-weight: bold;
+}
+    /* //Notice */
+.gallery ul li {
+    float: left;
+    margin-top: 15px;
+    margin-left: 5px;
+}
+.gallery li img {
+    width: 100px;
+    height: 100px;
+    padding: 10px;
+}
+/* //Tab Menu */
+.contents .banner {
+    float: left;
+    width: 390px;
+    height: 190px;
+    position: relative;
+    margin-left: 5px; 
+    margin-top: 5px;
+}
+.banner img {
+    width: 390px;
+    height: 190px;
+}
+.banner .bnText {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #eeeeee;
+    background-color: rgba(40,40,40,0.5);
+    width: 200px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+/* //Banner */
+.contents .shortcut {
+    float: right;
+    width: 400px;
+    height: 190px;
+    position: relative;
+    margin-top: 5px;
+}
+.shortcut img {
+    width: 400px;
+    height: 190px;
+}
+.shortcut .scText {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+    font-size: 20px;
+    font-weight: bold;
+    color: #eeeeee;
+    background-color: rgba(40,40,40,0.5);
+    width: 200px;
+    text-align: center;
+    height: 40px;
+    line-height: 40px;
+}
+#layer {
+    display: none;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+#layer.active {
+    display: block;
+}
+#layer .layerUp {
+    position: fixed;
+    width: 400px;
+    height: 300px;
+    left: 30%;
+    top: 30%;
+    background-color: #ffffff;
+    border: 2px solid #333333;
+    z-index: 2;
+}
+.layerUp .upTitle {
+    width: 400px;
+    float: left;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 20px;
+}
+.layerUp .upBody {
+    float: left;
+    line-height: 30px;
+    height: 350px;
+    font-size: 16px;
+    text-align: center;
+    width: 380px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.layerUp .upBtn {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    font-weight: bold;
+    font-size: 15px;
+    width: 80px;
+    height: 30px;
+    background-color: #bbbbbb;
+    text-align: center;
+}
+.upBtn:active {
+    background-color: #dddddd;
 }
 /* //Contents */
 
@@ -51,4 +304,33 @@ footer {
     width: 100%;
     height: 100px;
     background-color: #30a3f3;
+}
+footer .btlogo {
+    float: left;
+    width: 190px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 10px;
+}
+footer .btmenu {
+    float: right;
+    width: 600px;
+    height: 50px;
+    text-align: center;
+}
+.btmenu li {
+    float: left;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+}
+.btmenu li a {
+    font-size: 18px;
+}
+    /* //Bottom Menu */
+footer .copyright {
+    float: right;
+    width: 600px;
+    height: 50px;
+    font-size: 18px;
 }
