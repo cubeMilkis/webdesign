@@ -121,78 +121,96 @@ header .menu {
 }
 .contents .tabMenu {
     float: left;
-    width: 400px;
+    width: 395px;
     height: 180px;
     margin: 10px 0;
     position: relative;
 }
 .tabMenu > li {
     float: left;
+    height: 32px;
+    line-height: 32px; 
     width: 100px;
-    line-height: 30px;
 }
-.tabMenu > li > a {
-    display: block;
+.tabMenu > li > a:hover {
+    background-color: #eeeeee;
+}
+.tabMenu > li.active > a{
+    background-color: #ffffff;
+}
+.tabMenu > li > a{
     font-size: 16px;
+    font-weight: bold;
     text-align: center;
     background-color: #cccccc;
     border: 1px solid #dddddd;
     border-bottom: none;
 }
-.tabMenu > li > a:hover {
+.tabMenu > li> a:hover {
     background-color: #eeeeee;
 }
-.tabMenu > li:first-child a {
+.tabMenu > li:first-child {
     border-right: none;
-}
-.tabMenu > li.active > a{
-    background-color: #ffffff;
 }
 .tabMenu > li > div {
     position: absolute;
-    left: 0px;
-    height: 0px;           
+    left: 0;
+    height: 0;
     overflow: hidden;
 }
 .tabMenu > li.active > div {
     width: 393px;
     height: 148px;
+    float: left;
     border: 1px solid #dddddd;
     z-index: 1;
 }
-.notice ul {
-    float: left;
-    width: 393px;
-    margin-top: 12px;
-    margin-bottom: 12px;
+.notice {
+     float: left;
 }
-.notice ul li a{
+.notice ul {
+    margin: 12px 0;
+    float: left;
+    width: 373px;
+}
+.notice ul li {
+    width: 393px;
+    padding-left: 10px;
+    float: left;
+}
+.notice li > a{
     height: 32px;
     line-height: 32px;
     font-size: 15px;
-    margin-right: 10px;
-    margin-left: 10px;
+    width: 373px;
 }
-.notice ul li a span {
-    float: right;
-    font-size: 15px;
-}
-.notice li:nth-child(2n) {
-    background-color: #cccccc;
+.notice li:nth-child(even){
+    background-color: #bbbbbb;
 }
 .notice li a:hover {
     font-weight: bold;
 }
+.notice li a span {
+    font-size: 15px;
+    float: right;
+}
     /* //Notice */
-.gallery ul li {
+.gallery {
     float: left;
-    margin-top: 15px;
-    margin-left: 5px;
+}
+.gallery ul {
+    margin-left: 10px;
+}
+.gallery li {
+    float: left;
+    width: 100px;
+    height: 100px;
+    margin-top: 20px;
+    margin-left: 15px;
 }
 .gallery li img {
     width: 100px;
     height: 100px;
-    padding: 10px;
 }
 /* //Tab Menu */
 .contents .banner {

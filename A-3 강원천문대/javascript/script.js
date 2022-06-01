@@ -15,13 +15,7 @@ jQuery(document).ready(function(){
         .appendTo(`.imgSlide`)
     },3000);
 
-    $(function(){
-        $(`.tabMenu > li > a`).click(function(){
-            $(this).parent().addClass(`active`)
-            .siblings().removeClass(`active`);
-            return false;
-        });
-    });
+    
 
     $(`.notice li a:first`).click(function(){
         $(`#layer`).addClass(`active`)
