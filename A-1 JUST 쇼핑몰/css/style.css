@@ -246,6 +246,7 @@ header .menu {
     left:0;
     top: 0;
     display: none;
+    z-index: 2;
 }
 #layer.active {
     display: block;
