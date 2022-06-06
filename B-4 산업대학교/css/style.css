@@ -1,0 +1,224 @@
+@charset "utf-8";
+/* CSS Document */
+
+* {
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
+    color: #222328;
+    font-family: "맑은 고딕";
+}
+body {
+    width: 100%;
+    min-width: 1200px;
+    font-size: 20px;
+    background-color: #ffffff;
+}
+a {
+    text-decoration: none;
+    display: block;
+    color: inherit;
+}
+/* //Basic Settings */
+
+.wrap {
+    width: 1200px;
+    height: 100px;
+    position: relative;
+}
+.bodyWrap {
+    width: 1200px;
+    height: 500px;
+}
+/* //Wraps */
+header {
+    width: 100%;
+    height: 100px;
+    background-color: #ffff90;
+}
+header .logo {
+    float: left;
+    width: 200px;
+    height: 40px;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+.logo img {
+    width: 200px;
+    height: 40px;
+}
+    /* //Logo */
+header .menu {
+    float: right;
+    width: 600px;
+    height: 100px;
+}
+.menu .mainMenu {
+    float: left;
+    width: 600px;
+    height: 100px;
+}
+.menu .mainMenu > li {
+    float: left;
+    width: 150px;
+    height: 50px;
+    line-height: 50px;
+    margin-top: 50px;
+}
+.menu .mainMenu > li > a {
+    font-size: 16px;
+    font-weight: bold;
+    background-color: #333333;
+    color: #ffffee;
+    text-align: center;
+}
+.menu .mainMenu > li > a:hover {
+    background-color: #bbbbbb;
+    color: #ffff00;
+}
+        /* End of Main Menu */
+.menu .mainMenu .subMenu {
+    position: relative;
+    text-align: center;
+    z-index: 2;
+    display: none;
+}
+.menu .mainMenu .subMenu > li {
+    height: 50px;
+    line-height: 50px;
+}
+.menu .mainMenu .subMenu > li > a {
+    color: #ffffff;
+    background-color: #333333;
+    font-size: 14px;
+    font-weight: bold;
+}
+.menu .mainMenu .subMenu > li > a:hover {
+    background-color: #cccccc;
+    color: #222328;
+}
+        /* //End of Sub Menu */
+.menu .menuFill {
+    display: none;
+    top: 100px;
+    left: 0;
+    position: absolute;
+    width: 1200px;
+    height: 200px;
+    background-color: #333333;
+    z-index: 1;
+}
+/* //End of MenuFill */
+    /* //End of Menu */
+/* //End of Header */
+
+.imgSlide {
+    float :left;
+    width: 1200px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+.imgSlide .slideList {
+    width: 3600px;
+}
+.slideList li {
+    float: left;
+}
+.slideList li a img {
+    float: left;
+    width: 1200px;
+    height: 300px;
+}
+.slideList li a .imgText {
+    position: absolute;
+    margin-top: 125px;
+    margin-left: 350px;
+    font-size: 18px;
+    font-weight: bold;
+    width: 500px;
+    height: 50px;
+    line-height: 50px;
+    background-color: rgba(40,40,40,0.5);
+    color: #ffff00;
+    text-align: center;
+}
+/* //End of Image Slide */
+
+.contents {
+    float: left;
+    width: 1200px;
+    height: 200px;
+}
+.contents .notice {
+    float: left;
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+.notice > h4 {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #dddddd;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.notice ul {
+    position: absolute;
+    border: 1px solid #cccccc;
+    width: 380px;
+    height: 160px;
+    padding-left: 9px;
+    padding-right: 9px;
+    top: 40px;
+}
+.notice ul li {
+    width: 380px;
+    float: left;
+    height: 40px;
+    line-height: 40px;
+}
+.notice ul li a {
+    font-size: 16px;
+}
+.notice ul li a:hover {
+    font-weight: bold;
+}
+.notice ul li a span {
+    float: right;
+}
+    /* //End of Notice */
+.contents .gallery {
+    float: left;
+    width: 400px;
+    height: 200px;
+    position: relative;
+}
+.gallery > h4 {
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #dddddd;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    text-align: center;
+}
+.gallery ul {
+    position: absolute;
+    border: 1px solid #cccccc;
+    width: 380px;
+    height: 160px;
+    padding-left: 9px;
+    padding-right: 9px;
+    top: 40px;
+}
+.gallery ul li {
+    width: 100px;
+    float: left;
+    height: 100px;
+    line-height: 100px;
+}
